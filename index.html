@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <header>
+        <div class="icon-box">
+          <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        </div>
+        <h1>Todo-List</h1>
+      </header>
+
+      <ul class="filter-list">
+        <li class="filter active" data-filter="all">
+          <div class="icon-box">
+            <i class="fa-solid fa-bowling-ball"></i>
+          </div>
+          <p>All</p>
+        </li>
+
+        <li class="filter" data-filter="active">
+          <div class="icon-box">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <p>Active</p>
+        </li>
+
+        <li class="filter" data-filter="completed">
+          <div class="icon-box">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p>Completed</p>
+        </li>
+      </ul>
+    </nav>
+
+
+    <main>
+      <div class="add-todo-wrapper">
+        <div class="icon-box">
+          <i class="fa-solid fa-list"></i>
+        </div>
+
+        <button id="add-todo">+ Add Todo</button>
+      </div>
+
+      <ul id="todo-list">
+        <!-- todos -->
+      </ul>
+
+      <div class="add-task-container hidden">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>Write Your Task</h3>
+          <label for="add-task-input">
+            <input type="text" id="add-task-input">
+          </label>
+          <button id="add-task-btn">Add This Task</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
