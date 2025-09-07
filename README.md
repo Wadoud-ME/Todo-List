@@ -17,6 +17,12 @@ It allows users to add, delete, and mark tasks as complete. Tasks are **saved in
 
 ---
 
+## 🚀 Live Demo
+
+🔗 [**Click here to try the Todo List App**](https://wadoud-me.github.io/Todo-List/) 
+
+---
+
 ## 🖼️ Screenshots
 
 | Desktop View | Mobile View |
